@@ -1,0 +1,59 @@
+# Proprietary License and Use Restrictions
+
+Copyright (c) 2026 Samantha Greenwell Revita and Terry Snyder. All rights reserved.
+
+This repository is provided as a public proof surface for Elyria Mission Control Engine v0.1 under Elyria Systems — VA.
+
+No open-source license is granted.
+
+## Permitted Use
+
+You may view the public repository contents for evaluation, review, discussion, and non-commercial assessment of the bounded proof surface.
+
+## Prohibited Use
+
+Without prior written authorization from the rights holders, you may not:
+
+- copy, reproduce, redistribute, mirror, repackage, sublicense, or publish this repository or any substantial portion of it;
+- deploy, host, operate, integrate, or commercialize this repository or its concepts in any production, commercial, regulated, aerospace, defense, scientific, engineering, client-facing, or enterprise environment;
+- create derivative systems, competing products, training datasets, model behavior, benchmarks, simulations, adapters, plugins, agents, workflows, or commercial implementations from this repository or its concepts;
+- reverse engineer, infer, reconstruct, or approximate protected scoring law, private Φ/Ψ mappings, mission-control kernels, stage-admission logic, witness mechanisms, corridor logic, receipt/replay methods, production runtime substrate, scientific kernels, aerospace-facing adapters, materials/fusion kernels, fabrication exporters, geometry generation logic, or domain-transfer mechanics;
+- use this repository or its concepts to train, fine-tune, benchmark, evaluate, prompt, steer, or derive behavior for AI systems, models, agents, governance systems, execution-control systems, aerospace systems, scientific discovery systems, materials systems, fusion systems, or mission-control products;
+- represent this work as your own, imply authorship, imply affiliation, imply endorsement, remove attribution, or use Elyria Systems — VA, Veritas Aegis, Samantha Greenwell Revita, or Terry Snyder names in a way that suggests authorization or partnership without written agreement.
+
+## Public Surface Boundary
+
+This repository exposes only a bounded public proof surface.
+
+It does not include, disclose, license, or transfer:
+
+- protected implementation layers;
+- production runtime logic;
+- private scoring law;
+- private Φ/Ψ mappings;
+- protected scientific kernels;
+- materials or fusion kernels;
+- propulsion or aerospace technical detail;
+- fabrication/export logic;
+- geometry generation internals;
+- commercial adapters;
+- production enforcement substrate;
+- any export-controlled technical information.
+
+## No NASA Affiliation or Certification
+
+This repository may describe a NASA-facing or aerospace-facing evaluation posture.
+
+It does not claim NASA affiliation, NASA endorsement, NASA certification, flight readiness, production aerospace deployment approval, or authorization for use in aerospace, defense, regulated, or mission-critical systems.
+
+## No Warranty
+
+This repository is provided for controlled public evaluation only, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, correctness, safety, reliability, or suitability for production, aerospace, defense, scientific, regulated, or mission-critical use.
+
+## Commercial and Evaluation Access
+
+Full evaluation, integration, commercial use, deployment, production access, protected-kernel access, or access to implementation layers requires a separate written agreement and/or NDA.
+
+Elyria Systems — VA  
+Samantha Greenwell Revita · Terry Snyder  
+All rights reserved.
