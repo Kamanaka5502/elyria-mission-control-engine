@@ -1,0 +1,31 @@
+CASE admit_simulation
+outcome=ADMIT
+advanced=true
+invariant_holds=true
+PASS
+
+CASE refuse_no_witness
+outcome=REFUSE
+advanced=false
+invariant_holds=true
+PASS
+
+CASE halt_safety_failed
+outcome=HALT
+advanced=false
+invariant_holds=true
+PASS
+
+CASE rebound_non_monotone
+outcome=REBOUND
+advanced=false
+invariant_holds=true
+PASS
+
+CASE quarantine_contaminated
+outcome=QUARANTINE
+advanced=false
+invariant_holds=true
+PASS
+
+OVERALL: MISSION_CONTROL_INVARIANT_HOLDS
