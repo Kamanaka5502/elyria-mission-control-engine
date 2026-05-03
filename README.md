@@ -2,20 +2,36 @@
 
 # ELYRIA MISSION CONTROL ENGINE v0.1
 
-### Public proof surface for AI-scientific stage admission: safety gating, witness checks, monotone advancement, receipts, and replay
+### Controlled stage-admission proof surface for AI-assisted scientific and aerospace-facing engineering workflows
 
 **ELYRIA SYSTEMS — VA**  
 **Samantha Revita · Terry Snyder**
 
 [![CI](https://github.com/Kamanaka5502/elyria-mission-control-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Kamanaka5502/elyria-mission-control-engine/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-mission%20control-009688)
-![Invariant](https://img.shields.io/badge/Invariant-no%20unsafe%20advancement-red)
-![Receipts](https://img.shields.io/badge/Receipts-stage%20proof-gold)
-![Replay](https://img.shields.io/badge/Replay-deterministic%20material-6f42c1)
+![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-0B3D91)
+![FastAPI](https://img.shields.io/badge/FastAPI-mission%20control-105BD8)
+![Invariant](https://img.shields.io/badge/Invariant-no%20unsafe%20advancement-FD3A4A)
+![Stage Gate](https://img.shields.io/badge/Stage%20Gate-safety%20%7C%20witness%20%7C%20monotone-0B3D91)
+![Receipts](https://img.shields.io/badge/Receipts-stage%20proof-FD3A4A)
+![Replay](https://img.shields.io/badge/Replay-deterministic%20material-105BD8)
+![Posture](https://img.shields.io/badge/Posture-NASA--facing%20evaluation%20path-black)
 ![License](https://img.shields.io/badge/License-Proprietary-black)
 
 </div>
+
+---
+
+## Mission Posture
+
+This is a **NASA-facing controlled evaluation surface**.
+
+It is not a claim of NASA affiliation, endorsement, certification, flight readiness, or deployment approval.
+
+It is a bounded proof harness for one aerospace-relevant invariant:
+
+```text
+Unsafe, unwitnessed, non-monotone, or invalid engineering formation cannot advance stages.
+```
 
 ---
 
@@ -36,18 +52,19 @@ The proof is that no unsafe, unwitnessed, non-monotone, or invalid formation can
 ## Mission-Control Invariant
 
 ```text
-No scientific formation may advance stages unless it remains safe, witnessed, admissible, monotone, and receipt-bound.
+No scientific or engineering formation may advance stages unless it remains safe, witnessed, admissible, monotone, and receipt-bound.
 ```
 
 ---
 
-## Public Stage Chain
+## Aerospace-Facing Stage Chain
 
 ```text
-candidate
+candidate formation
 → Φ safety gate
-→ Ψ potential score
-→ witness check
+→ Ψ potential posture
+→ evidence completeness
+→ witness standing
 → monotone stage check
 → stage admission decision
 → receipt
@@ -56,17 +73,34 @@ candidate
 
 ---
 
+## Controlled Corridor
+
+The public corridor is deliberately small:
+
+```text
+Design Note
+→ Simulation Admission Request
+→ Controlled Review
+→ Certification Packet
+```
+
+The protected effect is **stage advancement**.
+
+The protected effect is not propulsion, fabrication, flight execution, controlled technical data, or aerospace design instruction.
+
+---
+
 ## Outcome Model
 
-| Outcome | Meaning | Advancement posture |
+| Outcome | Mission meaning | Advancement posture |
 |---|---|---|
 | `ADMIT` | Stage advancement is permitted | May advance |
-| `HOLD` | Formation is near-boundary or incomplete | No advancement |
+| `HOLD` | Formation is incomplete or near-boundary | No advancement |
 | `REBOUND` | Return to prior valid stage | No new advancement |
 | `REFUSE` | Formation lacks standing | No advancement |
-| `HALT` | Safety/integrity failure | Stop corridor |
+| `HALT` | Safety or integrity failure | Stop corridor |
 | `QUARANTINE` | Contaminated formation isolated | No advancement |
-| `CERTIFY` | Candidate is ready for controlled external review | May certify bounded proof only |
+| `CERTIFY` | Bounded proof package ready for controlled review | May certify proof only |
 
 ---
 
@@ -79,40 +113,42 @@ POST /claim/attempt
 POST /simulation/admit
 ```
 
-These routes are public proof surfaces. They do not expose protected chemistry, fusion, materials, fabrication, field-equation, scoring, or substrate internals.
+These routes are public proof surfaces. They do not expose protected chemistry, fusion, materials, fabrication, field-equation, scoring, propulsion, aerospace design, or production substrate internals.
 
 ---
 
-## What This Repository Exposes
+## Receipt Shape
 
-```text
-bounded stage-admission behavior
-visible outcome semantics
-receipt hashes
-proof cases
-replay material
-no-advance posture for unsafe formations
-```
+Every stage decision produces receipt material:
 
-## What This Repository Does Not Expose
-
-```text
-protected scoring law
-private Φ/Ψ mappings
-materials/fusion kernels
-candidate-generation internals
-fabrication exporters
-geometry generation logic
-domain transfer mechanics
-production runtime substrate
+```json
+{
+  "mission_decision_id": "md_...",
+  "corridor_id": "aerospace_surrogate_corridor_v0_1",
+  "stage_from": "DESIGN_NOTE",
+  "stage_to": "SIMULATION_REQUEST",
+  "candidate_hash": "sha256...",
+  "policy_hash": "sha256...",
+  "witness_hash": "sha256...",
+  "outcome": "ADMIT",
+  "reason_code": "STAGE_ADVANCEMENT_ADMITTED",
+  "advanced": true,
+  "invariant_holds": true,
+  "receipt_hash": "sha256...",
+  "replay_token": "replay_..."
+}
 ```
 
 ---
 
-## Acceptance Condition
+## Proof Cases
 
 ```text
-If unsafe, unwitnessed, non-monotone, or invalid formation can advance stages, the proof fails.
+admit_simulation        → ADMIT      → advanced=true
+refuse_no_witness       → REFUSE     → advanced=false
+halt_safety_failed      → HALT       → advanced=false
+rebound_non_monotone    → REBOUND    → advanced=false
+quarantine_contaminated → QUARANTINE → advanced=false
 ```
 
 ---
@@ -127,6 +163,68 @@ Expected result:
 
 ```text
 OVERALL: MISSION_CONTROL_INVARIANT_HOLDS
+```
+
+---
+
+## What This Repository Exposes
+
+```text
+bounded stage-admission behavior
+visible outcome semantics
+receipt hashes
+proof cases
+replay material
+no-advance posture for unsafe formations
+controlled aerospace-facing evaluation language
+```
+
+## What This Repository Does Not Expose
+
+```text
+protected scoring law
+private Φ/Ψ mappings
+materials/fusion kernels
+candidate-generation internals
+fabrication exporters
+geometry generation logic
+propulsion or aerospace technical detail
+export-controlled information
+domain transfer mechanics
+production runtime substrate
+```
+
+---
+
+## Acceptance Condition
+
+```text
+If unsafe, unwitnessed, non-monotone, contaminated, or invalid formation can advance stages, the proof fails.
+```
+
+---
+
+## External Language Boundary
+
+Use:
+
+```text
+NASA-facing controlled evaluation surface
+controlled aerospace evaluation corridor
+stage-admission proof harness
+AI-scientific mission-control invariant
+```
+
+Do not use:
+
+```text
+NASA certified
+NASA approved
+flight ready
+rocket design package
+propulsion system
+fabrication-ready aerospace design
+production aerospace deployment
 ```
 
 ---
