@@ -1,0 +1,14 @@
+{
+  "candidate_id": "surrogate-001",
+  "corridor_id": "aerospace_surrogate_corridor_v0_1",
+  "stage_from": "DESIGN_NOTE",
+  "stage_to": "SIMULATION_REQUEST",
+  "safety_passed": true,
+  "evidence_complete": true,
+  "witness_present": true,
+  "monotone_stage_move": true,
+  "contamination_signal": 0.0,
+  "integrity_ok": true,
+  "certification_requested": false,
+  "public_summary": "safe surrogate design note requesting simulation admission"
+}
