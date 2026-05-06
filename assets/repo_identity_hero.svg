@@ -1,0 +1,85 @@
+<svg width="1800" height="1000" viewBox="0 0 1800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="50%" r="78%">
+      <stop offset="0" stop-color="#153b60"/>
+      <stop offset="0.42" stop-color="#07182e"/>
+      <stop offset="1" stop-color="#02040a"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7d6"/>
+      <stop offset="0.52" stop-color="#d8b76a"/>
+      <stop offset="1" stop-color="#6f4708"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="74" height="74" patternUnits="userSpaceOnUse"><path d="M74 0H0V74" stroke="#1e3a5f" stroke-width="1" opacity="0.25"/></pattern>
+  </defs>
+
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect width="1800" height="1000" fill="url(#grid)" opacity="0.50"/>
+  <rect x="50" y="50" width="1700" height="900" rx="42" fill="none" stroke="#26364f" stroke-width="2"/>
+
+  <text x="92" y="150" font-family="Georgia,serif" font-size="74" fill="#f8fafc">Elyria</text>
+  <text x="94" y="222" font-family="Georgia,serif" font-size="52" fill="#d8b76a">Mission Control Engine</text>
+  <path d="M96 252H710" stroke="url(#gold)" stroke-width="3"/>
+  <text x="98" y="305" font-family="Inter,Arial" font-size="19" fill="#93c5fd" letter-spacing="7">STAGE ADMISSION · LAUNCH / NO-LAUNCH · WITNESS BEFORE ADVANCE</text>
+
+  <g transform="translate(1000 520)">
+    <path d="M0 -390V390" stroke="url(#gold)" stroke-width="5" filter="url(#glow)"/>
+    <path d="M-78 -330 L-28 -250 V250 L-78 330" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.70"/>
+    <path d="M78 -330 L28 -250 V250 L78 330" fill="none" stroke="#d8b76a" stroke-width="3" opacity="0.78"/>
+    <text x="0" y="-420" text-anchor="middle" font-family="Inter,Arial" font-size="18" fill="#d8b76a" font-weight="900" letter-spacing="4">ADMISSION BOUNDARY</text>
+
+    <g font-family="Inter,Arial" font-size="19" font-weight="900" letter-spacing="3">
+      <text x="-325" y="-70" fill="#93c5fd">NO LAUNCH</text>
+      <text x="125" y="-70" fill="#d8b76a">LAUNCH ADMITTED</text>
+    </g>
+    <circle cx="-205" cy="-20" r="20" fill="none" stroke="#93c5fd" stroke-width="3"/>
+    <path d="M-215 -30L-195 -10M-195 -30L-215 -10" stroke="#93c5fd" stroke-width="3"/>
+    <circle cx="300" cy="-20" r="20" fill="#06111f" stroke="#d8b76a" stroke-width="4" filter="url(#glow)"/>
+    <path d="M288 -20L298 -9L316 -33" stroke="#d8b76a" stroke-width="4" fill="none"/>
+
+    <g stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.65">
+      <path d="M-830 260 H-670 L-610 230 H-470 L-410 200 H-260 L-180 160 H-88"/>
+      <path d="M-830 310 H-570 L-510 280 H-360 L-300 250 H-155 L-88 205" opacity="0.55"/>
+    </g>
+    <g font-family="Inter,Arial" font-size="14" fill="#93c5fd" font-weight="800" letter-spacing="2">
+      <text x="-815" y="240">INTELLIGENCE SYNTHESIS</text>
+      <text x="-585" y="210">MISSION ASSESSMENT</text>
+      <text x="-390" y="180">TRAJECTORY DESIGN</text>
+      <text x="-195" y="145">RISK + READINESS</text>
+    </g>
+
+    <g transform="translate(420 220)">
+      <path d="M0 180 C40 20 120 -120 270 -275" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.65"/>
+      <path d="M0 180 C110 20 260 -130 430 -230" stroke="#d8b76a" stroke-width="3" fill="none" opacity="0.85"/>
+      <circle cx="0" cy="180" r="9" fill="#d8b76a" filter="url(#glow)"/>
+      <circle cx="85" cy="55" r="7" fill="#38bdf8"/><circle cx="170" cy="-45" r="7" fill="#38bdf8"/><circle cx="270" cy="-275" r="7" fill="#38bdf8"/>
+      <circle cx="430" cy="-230" r="8" fill="#d8b76a" filter="url(#glow)"/>
+      <g font-family="Inter,Arial" font-size="15" fill="#93c5fd" font-weight="900" letter-spacing="2">
+        <text x="110" y="72">STAGE 01 LIFTOFF</text>
+        <text x="205" y="-28">STAGE 02 ASCENT</text>
+        <text x="305" y="-160">STAGE 03 ORBITAL INSERTION</text>
+        <text x="465" y="-225" fill="#d8b76a">STAGE 04 DEPLOY</text>
+      </g>
+    </g>
+
+    <g transform="translate(580 290)">
+      <path d="M0 90 L10 -70 L20 90 Z" fill="#f8fafc" stroke="#d8b76a" stroke-width="2"/>
+      <rect x="4" y="90" width="12" height="80" fill="#d8b76a" opacity="0.85"/>
+      <path d="M10 170 C-20 210 -25 250 -25 290 H45 C45 250 40 210 10 170Z" fill="#d8b76a" opacity="0.35" filter="url(#glow)"/>
+      <circle cx="10" cy="100" r="115" fill="none" stroke="#d8b76a" stroke-width="2" opacity="0.30"/>
+      <circle cx="10" cy="100" r="70" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.25"/>
+    </g>
+  </g>
+
+  <g transform="translate(96 790)" font-family="Inter,Arial">
+    <rect x="0" y="0" width="650" height="108" rx="22" fill="#07111f" stroke="#26364f"/>
+    <text x="32" y="42" font-size="20" fill="#d8b76a" font-weight="900" letter-spacing="4">MISSION RULE</text>
+    <text x="32" y="74" font-size="17" fill="#cbd5e1">unsafe, unwitnessed, non-monotone formation cannot advance stages</text>
+  </g>
+
+  <text x="900" y="930" text-anchor="middle" font-family="Georgia,serif" font-size="31" fill="#fff3c4">Mission control is not launch enthusiasm. It is stage admission.</text>
+</svg>
