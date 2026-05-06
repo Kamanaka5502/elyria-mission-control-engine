@@ -17,6 +17,8 @@
 ![Posture](https://img.shields.io/badge/Posture-NASA--facing%20evaluation%20path-black)
 ![License](https://img.shields.io/badge/License-Proprietary-black)
 
+![Elyria Mission Control Engine](assets/repo_identity_hero.svg)
+
 </div>
 
 ---
